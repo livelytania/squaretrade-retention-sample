@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- CSS Styles -->
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <img class="logo header-logo" src="Images/squaretrade-logo@2x.png" alt="SquareTrade logo">
+            </div>
+            <nav>
+                <div class="menu-container">
+                    <a href="" class="menu-item">About us</a>
+                    <a href="" class="menu-item">FAQ</a>
+                    <a href="" class="menu-item">How to file a claim</a>
+                    <a href="" class="menu-item">Contact us</a>
+                </div>
+            </nav>
+        </header>
+        
+        <section>
+            <header class="banner">
+                <div class="banner-container">
+                    <div class="smartphone-shadow"></div>
+                    <img class="broken-smartphone" src="Images/broken-smartphone.png" alt="An image of a smartphone with a cracked screen" height="366">
+                    <div class="title">
+                        <h1>Are you sure you want to cancel?</h1>
+                        <h3>Once you cancel your warranty it cannot be reinstated</h3>
+                    </div>
+                </div>
+            </header>
+
+            <div class="features">
+                <div class="features-container">
+                    <article class="feature">
+                        <img src="Images/u-turn-icon@2x.png" alt="No u-turns icon">
+                        <h2>There is no going back.</h2>
+                        <p>Once you cancel your SquareTrade plan you can't reisntate it. If you drop your phone tomorrow, you won't be covered.</p>
+                    </article>
+                    <article class="feature">
+                        <img src="Images/money-icon@2x.png" alt="Coins icon">
+                        <h2>It could cost you.</h2>
+                        <p>Without phone insurance, you could pay as much as 200-300&euro; to get your device repaired. Or, even worse, up to 900&euro; to buy a new one.</p>
+                    </article>
+                    <article class="feature">
+                        <img src="Images/calendar-icon@2x.png" alt="Calendar icon">
+                        <h2>Accidents can happen to anyone.</h2>
+                        <p>One third of smartphone owners will break their phones in the next 24 months.</p>
+                    </article>
+                    <article class="feature">
+                        <img src="Images/broken-phone-icon@2x.png" alt="Broken smartphone icon">
+                        <h2>Don't regret it.</h2>
+                        <p>There is nothing worse than canceling your phone insurance today and accidentally smashing your phone tormorrow. Why risk it?</p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- https://termsfeed.com/blog/add-i-agree-terms-checkbox/ -->
+
+            <article class="form">
+                <form id="cancel" action="#" onsubmit="if(document.getElementById('checkbox').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
+                    <input type="checkbox" name="checkbox" value="check" id="checkbox" />
+                    <label for="checkbox"> I have read and agree to the Terms and Conditions and Privacy Policy</label>
+                    <div class="buttons">
+                        <input class="button button-red" form="stay" type="submit" name="stay" value="I WANT TO KEEP MY PLAN" />
+                        <input class="button button-blue"form="cancel" type="submit" name="cancel" value="I STILL WANT TO CANCEL MY PLAN" />
+                    </div>
+                </form>
+            </article>
+        </section>
+        
+        <footer>
+            <div class="footer-menu">
+                <a href="">Privacy policy</a>
+                <a href="">Legal notifications</a>
+                <a href="">Terms &amp; conditions</a>
+            </div>
+            <div class="trademark">
+                <div class="trademark-container">
+                    <img class="logo footer-logo" src="Images/squaretrade-white-logo@2x.png" alt="SquareTrade logo">
+                    <p>SQUARETRADE and the SquareTrade logos are trademarks or registered trademarks of SquareTrade, Inc. All other trademarks are the property of their respective owners, who are not affiliated with SquareTrade and do not endorse its products and services.</p>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        
+        <!-- Include only if using AJAX (Bootstrap slim jQuery version above is not ajax compatible) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+    </body>
+</html>
